@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Swiper JS - source: https://swiperjs.com -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <!-- AOS - source: https://github.com/michalsnik/aos -->
+    <link rel="stylesheet" href="../css/aos.css" />
+    <title>Jubiläum & Chronologie - Schuhmanufaktur Formschön</title>
+</head>
+
+<body>
+
+    <!------------------ BACK TO TOP BUTTON --------------------->
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top ↑</button>
+
+    <!------------------ HEADER --------------------->
+
+    <header>
+        <section class="logo">
+            <a href="../index.html" class="image-link">
+                <img class="logo-img" src="../img/logo.svg" alt="Schuhmanufaktur Formschön">
+            </a>
+        </section>
+
+        <!------------------ MOBILE NAVIGATION (source: https://www.w3schools.com/howto/howto_js_sidenav.asp) --------------------->
+
+        <nav class="mobile-nav">
+            <ul id="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li>
+                    <a href="../index.html">Start</a>
+                </li>
+                <li>
+                    <a href="chronologie.html">Jubiläum</a>
+                </li>
+                <li>
+                    <a href="chronologie.html#chronology"
+                        onclick="document.getElementById('sidenav').style.width = '0';">Chronologie</a>
+                </li>
+                <li>
+                    <a href="leistungen.html">Leistungen</a>
+                </li>
+                <li>
+                    <a href="leistungen.html#custom-shoes">Maßschuhe</a>
+                </li>
+                <li>
+                    <a href="leistungen.html#tips">Pflegetipps</a>
+                </li>
+                <li>
+                    <a href="../index.html#voices">Stimmen</a>
+                </li>
+                <li>
+                    <a href="../index.html#contact">Öffnungszeiten & Kontakt</a>
+                </li>
+            </ul>
+            <span class="burgermenu" onclick="openNav()">&#9776;</span>
+        </nav>
+
+        <!------------------ DESKTOP NAVIGATION --------------------->
+
+        <nav class="desktop-nav">
+            <ul id="mainnav">
+                <li>
+                    <a href="../index.html">Start</a>
+                </li>
+                <li>
+                    <a href="chronologie.html">Jubiläum</a>
+                </li>
+                <li>
+                    <a href="chronologie.html#chronology">Chronologie</a>
+                </li>
+                <li>
+                    <a href="leistungen.html">Leistungen</a>
+                </li>
+                <li>
+                    <a href="leistungen.html#custom-shoes">Maßschuhe</a>
+                </li>
+                <li>
+                    <a href="leistungen.html#tips">Pflegetipps</a>
+                </li>
+                <li>
+                    <a href="../index.html#voices">Stimmen</a>
+                </li>
+                <li>
+                    <a href="../index.html#contact">Öffnungszeiten & Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------ JUBILÄUM SLIDER --------------------->
+
+    <section id="jubilaeum-slider" data-aos="fade-down">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="../img/slider/slide-01.jpg" alt="Lederschuhe in Form bringen">
+                    </div>
+                    <div class="slide-head">
+                        <div class="slide-content">
+                            <h1>20 Jahre Schuhmanufaktur Formschön</h1>
+                            <p>Immer einen Schritt voraus!</p>
+                            <p>Feiern Sie mit uns!</p>
+                        </div>
+                        <div class="bg-circle"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="../img/slider/slide-02.jpg" alt="Schuhherstellung">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="../img/slider/slide-03.jpg" alt="Die Sohle wird an den Schuh genäht">
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class=" swiper-pagination">
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!------------------ MAIN CONTENT --------------------->
+
+    <main>
+
+        <!------------------ JUBILÄUM --------------------->
+
+        <section id="jubilaeum-middle" class="margin-h-v">
+            <div class="content-left" data-aos="fade-right">
+                <img src="../img/teaser/maria+paolo.png" alt="Maria Gracia und Paolo Zuretti">
+                <div class="bg-line orange"></div>
+                <h2>Jubiläum</h2>
+            </div>
+            <div class="content-right" data-aos="fade-left">
+                <h1>20 Jahre<br>
+                    Schuhmanufaktur<br> Formschön</h1>
+                <p>Im September 2001 eröffneten wir Geschwister, Maria Gracia und Paolo Zuretti, in Bad Godesberg unsere
+                    Schuhmanufaktur.
+                    Zuvor hatten wir beide den Meisterbrief erworben und mehrere Jahre in verschiedenen Werkstätten
+                    Berufserfahrung
+                    gesammelt. Im September 2021 feiern wir also das 20-jährige Bestehen unserer Manufaktur. Wir freuen
+                    uns auf Ihren Besuch
+                    – ob online oder direkt in der Alten Bahnhofstraße 5a in Bonn-Bad Godesberg.</p>
+            </div>
+        </section>
+
+        <!------------------ CHRONOLOGY --------------------->
+
+        <section id="chronology">
+            <div class="headline-and-element">
+                <h3 class="orange-headline"><strong>20 Jahre </strong>Schuhmanufaktur Formschön
+                </h3>
+                <img src="../img/chronology-shoes.png" alt="Schuhpaar">
+            </div>
+            <div class="subheadline-and-arrow">
+                <h4 class="subheadline margin-h">Meilensteine</h4>
+                <img class="timeline-arrow margin-h" src="../img/arrow-right.svg" alt="Pfeil nach rechts">
+            </div>
+            <div class="timeline margin-v" data-aos="fade-up">
+                <div class="time time01" onclick="$('#time01content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Sep 2001</h4>
+                </div>
+                <div class="time time02" onclick="$('#time02content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Sep 2004</h4>
+                </div>
+                <div class="time time03" onclick="$('#time03content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Aug 2007</h4>
+                </div>
+                <div class="time time04" onclick="$('#time04content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Mai 2010</h4>
+                </div>
+                <div class="time time05" onclick="$('#time05content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Okt 2014</h4>
+                </div>
+                <div class="time time06" onclick="$('#time06content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Dez 2015</h4>
+                </div>
+                <div class="time time07" onclick="$('#time07content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Mär 2016</h4>
+                </div>
+                <div class="time time08" onclick="$('#time08content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Jan 2017</h4>
+                </div>
+                <div class="time time09" onclick="$('#time09content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Dez 2017</h4>
+                </div>
+                <div class="time time10" onclick="$('#time10content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Sep 2019</h4>
+                </div>
+                <div class="time time11" onclick="$('#time11content').animate({height: 'toggle'});">
+                    <div class="time-bg"></div>
+                    <h4>Sep 2021</h4>
+                </div>
+            </div>
+            <div class="timeline-content margin-h">
+                <div class="time-content" id="time01content" style="display: none">
+                    <h2>September 2001</h2>
+                    <p>Gemeinsam eröffnen wir Geschwister, Maria Gracia und Paolo Zuretti, in Bad Godesberg unsere
+                        Schuhmanufaktur. Wir haben
+                        beide den Meisterbrief erworben und bereits mehrere Jahre Berufserfahrung in verschiedenen
+                        Werkstätten gesammelt.</p>
+                </div>
+                <div class="time-content" id="time02content" style="display: none">
+                    <h2>September 2004</h2>
+                    <p>Lukas Bischoff beginnt seine Ausbildung bei uns. Heute ist er im Team der Spezialist für die
+                        Schäfte-Herstellung.</p>
+                </div>
+                <div class="time-content" id="time03content" style="display: none">
+                    <h2>August 2007</h2>
+                    <p>Das WDR-Regionalfernsehen besucht die Manufaktur und porträtiert unsere Arbeit. Das ist der
+                        Durchbruch: Viele
+                        potenzielle Kunden und Kundinnen werden auf uns aufmerksam – nicht nur im Rheinland.</p>
+                </div>
+                <div class="time-content" id="time04content" style="display: none">
+                    <h2>Mai 2010</h2>
+                    <p>Neben Werkstatt und Laden eröffnen wir einen kleinen Showroom. Hier ist eine individuelle
+                        Atmosphäre beim Maßnehmen und
+                        bei der Anprobe gewährleistet.</p>
+                </div>
+                <div class="time-content" id="time05content" style="display: none">
+                    <h2>Oktober 2014</h2>
+                    <p>Die Schuhmanufaktur Formschön präsentiert ihre Modelle auf der Leistungsschau des rheinischen
+                        Handwerks in Düsseldorf.</p>
+                </div>
+                <div class="time-content" id="time06content" style="display: none">
+                    <h2>Dezember 2015</h2>
+                    <p>Wir beteiligen uns an der Neuordnung des Berufs „Maßschuhmacher/-in“, damit unser beruflicher
+                        Nachwuchs auf der Höhe der
+                        Zeit ist.</p>
+                </div>
+                <div class="time-content" id="time07content" style="display: none">
+                    <h2>März 2016</h2>
+                    <p>Wir sind Gast auf der europäischen Leder- und Mode-Messe in Brüssel.</p>
+                </div>
+                <div class="time-content" id="time08content" style="display: none">
+                    <h2>Januar 2017</h2>
+                    <p>Das alljährliche Treffen der Maßschuhmacher aus dem deutschsprachigen Raum findet diesmal bei
+                        uns, in der
+                        Schuhmanufaktur Formschön, statt.</p>
+                </div>
+                <div class="time-content" id="time09content" style="display: none">
+                    <h2>Dezember 2017</h2>
+                    <p>Wir zeigen bei den „Tagen der Manufakturen“ in Berlin die Fertigung von Maßschuhen.</p>
+                </div>
+                <div class="time-content" id="time10content" style="display: none">
+                    <h2>September 2019</h2>
+                    <p>Leonie Meißner beginnt bei uns die neue Ausbildung zur Maßschuhmacherin.</p>
+                </div>
+                <div class="time-content" id="time11content" style="display: none">
+                    <h2>September 2021</h2>
+                    <p>Wir feiern unser 20-jähriges Bestehen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!------------------ FOOTER --------------------->
+
+    <footer>
+        <section class="footer-columns">
+            <div class="col col01">
+                <img class="logo-img" src="../img/logo.svg" alt="Schuhmanufaktur Formschön Logo">
+            </div>
+            <div class="col col02">
+                <h4>Kategorien</h4>
+                <a href="../index.html">Start</a><br>
+                <a href="chronologie.html">Jubiläum</a><br>
+                <a href="chronologie.html#chronology">Chronologie</a><br>
+                <a href="leistungen.html">Leistungen</a><br>
+                <a href="leistungen.html#custom-shoes">Maßschuhe</a><br>
+                <a href="leistungen.html#tips">Pflegetipps</a><br>
+                <a href="../index.html#voices">Stimmen</a><br>
+                <a href="../index.html#contact">Öffnungszeiten & Kontakt</a>
+            </div>
+            <div class="col col03">
+                <h4>Impressum</h4>
+                <p>Schuhmanufaktur Formschön GmbH<br>
+                    Geschäftsführung: Maria Gracia und Paolo Zuretti<br>
+                    Amtsgericht Bonn, Handelsregister Nr. XXX000XXX<br>
+                    Finanzamt Bonn-Außenstadt, USt.ID: DE10111011
+                </p>
+                <p>&nbsp;</p>
+                <p>Alte Bahnhofstraße 5a<br>
+                    53173 Bonn-Bad Godesberg<br>
+                    Tel: <a href="tel:+49228123450">0228-123450</a><br>
+                    Fax: 0228-123459<br>
+                    <a href="mailto:info@schuhmanufaktur-formschön.de">info@schuhmanufaktur-formschön.de</a> <br>
+                    <a href="https://www.schuhmanufaktur-formschön.de">www.schuhmanufaktur-formschön.de</a>
+                </p>
+            </div>
+            <div class="col col04">
+                <h4>Social Media</h4>
+                <div class="sm-icons">
+                    <a class="image-link" href="https://www.snapchat.com"><img src="../img/social/snapchat.svg"
+                            alt="Snapchat"></a>
+                    <a class="image-link" href="https://www.instagram.com"><img src="../img/social/instagram.svg"
+                            alt="Instagram"></a>
+                    <a class="image-link" href="https://www.facebook.com"><img src="../img/social/facebook.svg"
+                            alt="Facebook"></a>
+                    <a class="image-link" href="https://www.youtube.com"><img src="../img/social/youtube.svg"
+                            alt="Youtube"></a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© 2021 Anna-Lena Langhans | Prüflingsnummer 131 55060</p>
+        </section>
+    </footer>
+    <!------------------ SCRIPT --------------------->
+
+    <!-- custom JavaScript: main.js-->
+    <script src="../js/main.js"></script>
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Swiper JS - source: https://swiperjs.com -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- AOS - source: https://github.com/michalsnik/aos -->
+    <script src="../js/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 800
+        });
+    </script>
+</body>
+
+</html>
